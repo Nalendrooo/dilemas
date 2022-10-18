@@ -36,6 +36,7 @@
 
                 </tbody>
             </table>
+            <a href="<?php echo base_url() . '' ?>" class="btn btn-danger">Back</a>
 
         </div>
     </div>

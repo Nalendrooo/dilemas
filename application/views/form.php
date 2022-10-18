@@ -18,7 +18,11 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Kelas</label>
-                    <input type="text" class="form-control" name="kelas">
+
+                    <select class="form-select" aria-label="Default select example" name="kelas">
+                        <option value="12.3A.21">12.3A.21</option>
+                        <option value="12.3B.21">12.3B.21</option>
+                    </select>
 
                 </div>
                 <div class="mb-3">
