@@ -13,14 +13,16 @@ class Contrl_dilemas extends CI_Controller
 
     public function tabel()
     {
-        $data['nama'] = $this->input->post('nama');
-        $data['nim'] = $this->input->post('nim');
-        $data['kelas'] = $this->input->post('kelas');
-        $data['tanggal_lahir'] = $this->input->post('tanggal_lahir');
-        $data['tempat_lahir'] = $this->input->post('tempat_lahir');
-        $data['alamat'] = $this->input->post('alamat');
-        $data['jenkel'] = $this->input->post('jenkel');
-        $data['agama'] = $this->input->post('agama');
+        $data = [
+            'nama' => $this->input->post('nama'),
+            'nim' => $this->input->post('nim'),
+            'kelas' => $this->input->post('kelas'),
+            'tanggal_lahir' => $this->input->post('tanggal_lahir'),
+            'tempat_lahir' => $this->input->post('tempat_lahir'),
+            'alamat' => $this->input->post('alamat'),
+            'jenkel' => $this->input->post('jenkel'),
+            'agama' => $this->input->post('agama')
+        ];
 
 
         $this->load->view('navbar', $data);
